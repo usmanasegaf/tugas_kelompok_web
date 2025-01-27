@@ -1,2 +1,2 @@
-### Bagian Frontend
-## Hasil akhir mungkin lengkap
+## Bagian Frontend saja
+### Hasil akhir mungkin lengkap
