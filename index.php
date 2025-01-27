@@ -7,6 +7,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
@@ -19,7 +22,6 @@
     <title>INTERNETKU | Internet Provider</title>
   </head>
   <body id="home">
-    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
       <div class="container">
@@ -52,16 +54,53 @@
 
     <!-- Jumbrotron -->
     <section class="jumbotron text-center">
-      <img src="img/foto_profil_rb.jpg" alt="Mohammad Usman Asegaf" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Mohammad Usman Asegaf</h1>
-      <p class="lead">Computer Science Student | Freelancer | Remotask Employee</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,64L30,74.7C60,85,120,107,180,133.3C240,160,300,192,360,181.3C420,171,480,117,540,133.3C600,149,660,235,720,229.3C780,224,840,128,900,74.7C960,21,1020,11,1080,32C1140,53,1200,107,1260,112C1320,117,1380,75,1410,53.3L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
+    <div class="container mt-3">
+        <!-- Carousel -->
+        <div id="carouselPaket" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPaket" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPaket" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPaket" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselPaket" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 425px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 425px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 425px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 425px; object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPaket" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPaket" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript to set interval -->
+    <script>
+        const myCarousel = document.querySelector('#carouselPaket');
+        const carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 5000, 
+            wrap: true, 
+        });
+    </script>
     </section>
     <!-- Akhir Jumbotron -->
 
