@@ -48,7 +48,7 @@
 
     <!-- Jumbrotron -->
     <section class="jumbotron text-center">
-    <div class="container mt-3">
+    <div class="container mt-4">
         <!-- Carousel -->
         <div id="carouselPaket" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators -->
@@ -62,16 +62,16 @@
             <!-- Slides -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 425px; object-fit: cover;">
+                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 550px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 425px; object-fit: cover;">
+                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 550px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 425px; object-fit: cover;">
+                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 550px; object-fit: cover;">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 425px; object-fit: cover;">
+                    <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 550px; object-fit: cover;">
                 </div>
             </div>
 
@@ -103,7 +103,8 @@
       <div class="container">
         <div class="row text-center">
           <div class="col mb-3">
-            <h2>Experience and Skills</h2>
+          <h4>Products</h4>
+            <h2>Affordable Pricing plans</h2>
           </div>
         </div>
         <div class="row justify-content-center">

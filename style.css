@@ -1,6 +1,6 @@
 .jumbotron {
     padding-top: 3rem;
-    background-color: #e2edff;
+    background-color: #ffffff;
   }
   
   #projects {
@@ -9,12 +9,8 @@
   section {
     padding-top: 6rem;
   }
-  
-  svg {
-    margin: 0;
-    padding: 0;
-    display: block;
-    overflow: hidden;
-    position: relative;
-  }
+
+  .carousel-item img {
+    border-radius: 30px;
+}
   
