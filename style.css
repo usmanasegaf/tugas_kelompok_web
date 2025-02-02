@@ -33,4 +33,16 @@
 
   .card {
     border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .card-header {
+    background-color: #f0e9ff
+  }
+
+  .custom-btn {
+    padding: 12px 20px;
+    font-size: 19px;
+    border-radius: 30px;
+    min-width: 280px;
   }

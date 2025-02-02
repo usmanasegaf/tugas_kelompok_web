@@ -121,51 +121,84 @@
       <div class="row justify-content-center mt-2">
         <div class="col-md-4 mb-3">
           <div class="card">
-            <img src="img/gedung_utb.jpg" class="card-img-top" alt="Product 1" />
-            <div class="card-body">
-              <p class="card-text text-center">
-                desc 1
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="img/freelancer.jpg" class="card-img-top" alt="Product 2" />
-            <div class="card-body text-center">
-              <p class="card-text">
-                desc 2
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="img/remotask.png" class="card-img-top" alt="Product 3" />
-            <div class="card-body text-center">
-              <p class="card-text">
-                desc 3
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
             <!-- Bagian Atas (Background Putih Keunguan) -->
-            <div class="card-header text-center" style="background-color: #f0e9ff; border-bottom: none;">
+            <div class="card-header text-center" style="border-bottom: none;">
               <h5 class="card-title" style="color: #5d5a88;">Basic</h5>
-              <h2 class="card-subtitle mb-2" style="color: #5d5a88;">Rp 99.000</h2>
+              <h1 class="card-subtitle mb-2 fw-semibold" style="color: #5d5a88;">Rp 99.000</h1>
               <p class="card-text" style="color: #5d5a88;">Billed monthly</p>
-              <a href="#" class="btn btn-primary" style="background-color: #5d5a88; border: none;">Get Started</a>
+              <a href="#" class="btn btn-primary custom-btn mb-1" style="background-color: #5d5a88; border: none;">Get
+                Started</a>
             </div>
             <!-- Bagian Bawah (Background Putih) -->
-            <div class="card-body text-center">
-              <p class="card-text">All analytic features</p>
-              <p class="card-text">20Mbps</p>
+            <div class="card-body justify-content-center">
+              <div class="container text-start ms-4">
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  All analytic features</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  20Mbps</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Normal Support</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Mobile App</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Up To 20 Connections</p>
+              </div>
             </div>
           </div>
         </div>
 
+        <div class="col-md-4 mb-3"> <!-- 2 -->
+          <div class="card">
+            <div class="card-header text-center" style=" border-bottom: none;">
+              <h5 class="card-title" style="color: #5d5a88;">Growth</h5>
+              <h1 class="card-subtitle mb-2 fw-semibold" style="color: #5d5a88;">Rp 199.000</h1>
+              <p class="card-text" style="color: #5d5a88;">Billed monthly</p>
+              <a href="#" class="btn btn-primary custom-btn mb-1" style="background-color: #5d5a88; border: none;">Get
+                Started</a>
+            </div>
+            <div class="card-body justify-content-center">
+              <div class="container text-start ms-4">
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Everything on Basic Plan</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  100Mbps</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Premium Support</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Mobile App</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Up To 100 Connections</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3"> <!-- 3 -->
+          <div class="card">
+            <div class="card-header text-center" style=" border-bottom: none;">
+              <h5 class="card-title" style="color: #5d5a88;">Enterprise</h5>
+              <h1 class="card-subtitle mb-2 fw-semibold" style="color: #5d5a88;">Rp 399.000</h1>
+              <p class="card-text" style="color: #5d5a88;">Billed monthly</p>
+              <a href="#" class="btn btn-primary custom-btn mb-1" style="background-color: #5d5a88; border: none;">Get
+                Started</a>
+            </div>
+            <div class="card-body justify-content-center">
+              <div class="container text-start ms-4">
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Everything on Growth Plan</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  500Mbps</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Dedicated Support</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Mobile App</p>
+                <p class="card-text"><i class="bi bi-check-circle-fill me-2" style="color: #5d5a88;"></i>
+                  Up To 300 Connections</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
