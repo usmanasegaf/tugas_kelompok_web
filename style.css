@@ -1,16 +1,36 @@
-.jumbotron {
-    padding-top: 3rem;
-    background-color: #ffffff;
+  /* Ubah warna teks navbar brand */
+  .navbar-brand {
+    color: #4B0082 !important;
   }
-  
-  #projects {
-    background-color: #e2edff;
+
+
+  .navbar-nav .nav-link {
+    color: #4c0082af !important;
   }
+
+
+  .navbar-nav .nav-link:hover {
+    color: #800080 !important;
+  }
+
   section {
     padding-top: 6rem;
   }
 
+  .jumbotron {
+    padding-top: 3rem;
+    background-color: #ffffff;
+  }
+
+  #projects {
+    background-color: #e2edff;
+  }
+
+
   .carousel-item img {
     border-radius: 30px;
-}
-  
+  }
+
+  .card {
+    border-radius: 20px;
+  }
