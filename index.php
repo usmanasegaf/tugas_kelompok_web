@@ -41,6 +41,9 @@
             <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#benefit">Benefit</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#products">Products</a>
           </li>
           <li class="nav-item">
@@ -108,6 +111,69 @@
     </script>
   </section>
   <!-- Akhir Jumbotron -->
+
+  <!-- Benefit -->
+  <section id="benefit" class="container my-5">
+    <div class="text-center">
+      <h2 class="fw-bold" style="color: #5d5a88;">Mengapa Memilih <span style="color: #800080;">INTERNETKU?</span></h2>
+      <p class="text-muted">Layanan internet cepat, stabil, dan terbaik untuk kebutuhan Anda!</p>
+    </div>
+
+    <div class="row text-center mt-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-speedometer2 fs-1" style="color: #800080;"></i>
+          <h5 class="fw-bold mt-3">Kecepatan Tinggi</h5>
+          <p class="text-muted">Streaming, gaming, dan bekerja tanpa hambatan dengan koneksi super cepat hingga 1 Gbps.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-wifi fs-1 " style="color: #800080;"></i>
+          <h5 class="fw-bold mt-3">Jaringan Stabil</h5>
+          <p class="text-muted">Teknologi fiber optic memastikan koneksi stabil tanpa gangguan.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-headset fs-1 " style="color: #800080;"></i>
+          <h5 class="fw-bold mt-3">Customer Support 24/7</h5>
+          <p class="text-muted">Tim support kami siap membantu kapan saja, 24 jam sehari.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center mt-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-house-door fs-1 " style="color: #800080;"></i>
+          <h5 class="fw-bold mt-3">Paket Rumah & Bisnis</h5>
+          <p class="text-muted">Pilihan paket fleksibel sesuai kebutuhan rumah atau usaha Anda.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-shield-lock fs-1 " style="color: #800080;"></i>
+          <h5 class="fw-bold mt-3">Keamanan Terjamin</h5>
+          <p class="text-muted">Jaga privasi Anda dengan teknologi keamanan tingkat tinggi.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-3">
+          <i class="bi bi-rocket fs-1 " style="color: #800080;"></i>
+          <h5 class="fw-bold mt-3">Instalasi Cepat</h5>
+          <p class="text-muted">Pemasangan hanya dalam 24 jam setelah pendaftaran.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Akhir Benefit -->
 
   <!-- Products -->
   <section id="products">
