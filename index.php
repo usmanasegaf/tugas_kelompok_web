@@ -47,7 +47,7 @@
             <a class="nav-link" href="#products">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#other_project">Login</a>
+            <a class="nav-link" href="#login" onclick="openLoginModal(event)">Login</a>
           </li>
         </ul>
       </div>
@@ -329,13 +329,12 @@
         document.getElementById('registrationModal').style.display = 'block';
       }
 
-      // Close modal when clicking outside
-      window.onclick = function (event) {
-        const modal = document.getElementById('registrationModal');
-        if (event.target == modal) {
-          modal.style.display = 'none';
+      // Untuk close modal registrasi 
+      document.getElementById('registrationModal').addEventListener('click', function (event) {
+        if (event.target === this) {  // 'this' mengacu pada registrationModal
+          this.style.display = 'none';
         }
-      }
+      });
 
       function selectPackage(num) {
         // Remove active class from all buttons
@@ -356,6 +355,77 @@
     </script>
   </section>
   <!-- Akhir Pendaftaran-->
+
+  <!-- Login -->
+
+  <!-- Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h4 class="modal-title">Login</h4>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label class="form-label">Username</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Login</button>
+
+        <div style="text-align: center; margin-top: 15px;">
+          <span style="color: #666;">
+            Belum mempunyai akun?
+            <a href="#" onclick="switchToRegister(event)"
+              style="color: #5d5a88; text-decoration: none; cursor: pointer;">
+              Daftar disini
+            </a>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Fungsi untuk membuka modal login
+    function openLoginModal(event) {
+      event.preventDefault();
+      document.getElementById('loginModal').style.display = 'block';
+    }
+
+    // Fungsi untuk beralih ke modal registrasi
+    function switchToRegister(event) {
+      event.preventDefault();
+      document.getElementById('loginModal').style.display = 'none';
+      document.getElementById('registrationModal').style.display = 'block';
+    }
+
+    // Event listener untuk submit form login
+    document.getElementById('loginForm').onsubmit = function (e) {
+      e.preventDefault();
+      alert('Login berhasil!');
+      document.getElementById('loginModal').style.display = 'none';
+    }
+
+    // Event listener untuk menutup modal dengan klik di luar
+    document.getElementById('loginModal').addEventListener('click', function (event) {
+      if (event.target === this) {
+        this.style.display = 'none';
+      }
+    });
+
+    // Event listener untuk menutup modal dengan tombol ESC
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        document.getElementById('loginModal').style.display = 'none';
+      }
+    });
+  </script>
+
+  <!-- Akhir Login -->
 
 
   <!-- Footer -->
