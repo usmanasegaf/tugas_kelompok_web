@@ -98,7 +98,7 @@
       </div>
     </div>
 
-    <!-- JavaScript to set interval -->
+    <!-- JavaScript untuk interval -->
     <script>
       const myCarousel = document.querySelector('#carouselPaket');
       const carousel = new bootstrap.Carousel(myCarousel, {
@@ -126,8 +126,8 @@
               <h5 class="card-title" style="color: #5d5a88;">Basic</h5>
               <h1 class="card-subtitle mb-2 fw-semibold" style="color: #5d5a88;">Rp 99.000</h1>
               <p class="card-text" style="color: #5d5a88;">Billed monthly</p>
-              <a href="#" class="btn btn-primary custom-btn mb-1" style="background-color: #5d5a88; border: none;">Get
-                Started</a>
+              <a href="#pendaftaran" class="btn btn-primary custom-btn mb-1"
+                style="background-color: #5d5a88; border: none;" onclick="openRegistrationModal(event)">Get Started</a>
             </div>
             <!-- Bagian Bawah (Background Putih) -->
             <div class="card-body justify-content-center">
@@ -153,8 +153,8 @@
               <h5 class="card-title" style="color: #5d5a88;">Growth</h5>
               <h1 class="card-subtitle mb-2 fw-semibold" style="color: #5d5a88;">Rp 199.000</h1>
               <p class="card-text" style="color: #5d5a88;">Billed monthly</p>
-              <a href="#" class="btn btn-primary custom-btn mb-1" style="background-color: #5d5a88; border: none;">Get
-                Started</a>
+              <a href="#pendaftaran" class="btn btn-primary custom-btn mb-1"
+                style="background-color: #5d5a88; border: none;" onclick="openRegistrationModal(event)">Get Started</a>
             </div>
             <div class="card-body justify-content-center">
               <div class="container text-start ms-4">
@@ -180,8 +180,8 @@
               <h5 class="card-title" style="color: #5d5a88;">Enterprise</h5>
               <h1 class="card-subtitle mb-2 fw-semibold" style="color: #5d5a88;">Rp 399.000</h1>
               <p class="card-text" style="color: #5d5a88;">Billed monthly</p>
-              <a href="#" class="btn btn-primary custom-btn mb-1" style="background-color: #5d5a88; border: none;">Get
-                Started</a>
+              <a href="#pendaftaran" class="btn btn-primary custom-btn mb-1"
+                style="background-color: #5d5a88; border: none;" onclick="openRegistrationModal(event)">Get Started</a>
             </div>
             <div class="card-body justify-content-center">
               <div class="container text-start ms-4">
@@ -216,6 +216,80 @@
     </path>
   </svg>
   <!-- Akhir products -->
+
+  <!-- Pendaftaran -->
+  <section id="pendaftaran">
+    <!-- Modals form -->
+    <div id="registrationModal" class="modal-registration">
+      <div class="modal-content">
+        <h4 class="modal-title">Formulir Pendaftaran</h4>
+        <h6 class="modal-subtitle">Silakan lengkapi data diri anda</h6>
+
+        <form id="registrationForm">
+          <div class="form-group">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Telepon</label>
+            <input type="tel" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Alamat</label>
+            <textarea class="form-control address" required></textarea>
+          </div>
+
+          <div class="package-options">
+            <button type="button" class="package-btn" onclick="selectPackage(1)">Paket 1</button>
+            <button type="button" class="package-btn" onclick="selectPackage(2)">Paket 2</button>
+            <button type="button" class="package-btn" onclick="selectPackage(3)">Paket 3</button>
+          </div>
+
+          <button type="submit" class="submit-btn">Daftar</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openRegistrationModal(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        document.getElementById('registrationModal').style.display = 'block';
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function (event) {
+        const modal = document.getElementById('registrationModal');
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      }
+
+      function selectPackage(num) {
+        // Remove active class from all buttons
+        document.querySelectorAll('.package-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        // Add active class to selected button
+        event.target.classList.add('active');
+      }
+
+      document.getElementById('registrationForm').onsubmit = function (e) {
+        e.preventDefault();
+        // Handle form submission here
+        // You can add your form processing logic
+        alert('Form submitted successfully!');
+        document.getElementById('registrationModal').style.display = 'none';
+      }
+    </script>
+  </section>
+  <!-- Akhir Pendaftaran-->
 
 
   <!-- Footer -->
